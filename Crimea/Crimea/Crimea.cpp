@@ -16,6 +16,18 @@ int main()
     }
     cout << "Аннексия Крыма успешно завершена. Поздравляем" << endl << "..." << endl;
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(hConsole, 240);
+    cout << "         " << endl;
+    SetConsoleTextAttribute(hConsole, 16);
+    cout << "         " << endl;
+    SetConsoleTextAttribute(hConsole, 64);
+    cout << "         " << endl;
+
+    SetConsoleTextAttribute(hConsole, 0);
+    cout << endl;
+
+
+    return 0;
 }
 
 
